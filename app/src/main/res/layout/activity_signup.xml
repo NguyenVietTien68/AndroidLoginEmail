@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Đăng ký"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edvEmail"
+        android:layout_width="290dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edvPassword"
+        android:layout_width="290dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edvEmail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edvEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edvEmail" />
+
+    <Button
+        android:id="@+id/btnDangKy"
+        android:layout_width="290dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="60dp"
+        android:text="Đăng ký"
+        android:textColor="#000000"
+        app:backgroundTint="#FFC107"
+        app:layout_constraintEnd_toEndOf="@+id/edvPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edvPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edvPassword" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="55dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:text="Email"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edvEmail"
+        app:layout_constraintStart_toStartOf="@+id/edvEmail" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edvPassword"
+        app:layout_constraintStart_toStartOf="@+id/edvPassword" />
+
+    <TextView
+        android:id="@+id/tvQuayLai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Quay lại đăng nhập"
+        android:textColor="#03A9F4"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnDangKy"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/btnDangKy"
+        app:layout_constraintTop_toBottomOf="@+id/btnDangKy" />
+</androidx.constraintlayout.widget.ConstraintLayout>
